@@ -22,7 +22,7 @@ document.querySelector('#board .btn-new-column').addEventListener('click', funct
 
   data.append('name', name);
 
-  fetch(baseUrl + '/column', {
+  fetch(prefix + baseUrl + '/column', {
       method: 'POST',
       headers: myHeaders,
       body: data,
